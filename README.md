@@ -15,17 +15,9 @@ jsoup-1.11.2-sources.jar<br/>
 <h2>App.java</h2>
 sample package>src/main/java/sample.sampe.App.java
 <p>
-public class App 
-{
-    public static void main( String[] args ) throws Exception
-    {
-        
     	String menuData = "20180425"; //Date(YYYYMMDD)
     	String menuType = "sikdang.do"; //sikdang.do:Student, sikdang2.do:Teacher
-    	
     	String URL = "https://www.kumoh.ac.kr/jsp/common/" + menuType +"?ilja=" + menuData;
-        //String URL = "https://www.kumoh.ac.kr/jsp/common/sikdang.do"; // Student
-        //String URL = "https://www.kumoh.ac.kr/jsp/common/sikdang2.do"; // Teacher
         
         Document doc = Jsoup.connect(URL).timeout(3000).get();
         Elements menu = doc.select("div").select(".meal01").select("dl");
@@ -73,8 +65,6 @@ public class App
         	System.out.println(timeData.get(3));
         }
         System.out.println("==============================");
-    }
-}
  </p>
 
 <h1>Reference site</h1>
