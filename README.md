@@ -15,6 +15,7 @@ jsoup-1.11.2-sources.jar<br/>
 <h2>App.java</h2>
 sample package>src/main/java/sample.sampe.App.java
 <p>
+        
     	String menuData = "20180425"; //Date(YYYYMMDD)
     	String menuType = "sikdang.do"; //sikdang.do:Student, sikdang2.do:Teacher
     	String URL = "https://www.kumoh.ac.kr/jsp/common/" + menuType +"?ilja=" + menuData;
